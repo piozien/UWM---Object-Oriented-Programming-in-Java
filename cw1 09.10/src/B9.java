@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class B9 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Podaj datę w formacie DD.MM.RRRR: ");
-        String data = scanner.nextLine();
+        String data = input.nextLine();
 
         if (sprawdzDate(data)) {
             System.out.println("Podana data jest poprawna.");

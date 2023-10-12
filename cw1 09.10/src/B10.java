@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class B10 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Podaj godzinę: ");
-        int godzina = scanner.nextInt();
+        int godzina = input.nextInt();
         System.out.print("Podaj minuty: ");
-        int minuty = scanner.nextInt();
+        int minuty = input.nextInt();
         System.out.print("Podaj sekundy: ");
-        int sekundy = scanner.nextInt();
+        int sekundy = input.nextInt();
 
         if (czyPoprawnaGodzina(godzina, minuty, sekundy)) {
             System.out.println("Poprawna godzina!");
