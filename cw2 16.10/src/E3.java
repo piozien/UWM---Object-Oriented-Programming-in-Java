@@ -1,5 +1,3 @@
-package E;
-
 import java.util.Random;
 
 public class E3 {

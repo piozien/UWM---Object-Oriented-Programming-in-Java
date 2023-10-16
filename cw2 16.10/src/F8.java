@@ -1,5 +1,3 @@
-package F;
-
 import java.util.Random;
 
 public class F8 {

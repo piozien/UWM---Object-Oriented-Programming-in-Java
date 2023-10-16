@@ -1,10 +1,8 @@
-package F;
-
 import java.util.Arrays;
 
 public class F19 {
     public static void main(String[] args) {
-        int[] tab1 = new int[]{1, 2, 6, 8, 2};
+        int[] tab1 = {1, 2, 6, 8, 2};
         System.out.println("Tablica 1: ");
         System.out.println(Arrays.toString(tab1));
         System.out.println("Tablica 2: ");

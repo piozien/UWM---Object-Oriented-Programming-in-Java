@@ -1,5 +1,3 @@
-package F;
-
 import java.util.Arrays;
 import java.util.Random;
 
@@ -8,13 +6,13 @@ public class F3 {
         int[] tab = new int[15];
         Random random = new Random();
 
-        int najw;
-        for(najw = 0; najw < tab.length; ++najw) {
-            tab[najw] = random.nextInt(50);
+
+        for(int i = 0; i < tab.length; ++i) {
+            tab[i] = random.nextInt(50);
         }
 
         System.out.printf(Arrays.toString(tab));
-        najw = tab[0];
+        int najw = tab[0];
         int najm = tab[0];
 
         for(int i = 1; i < tab.length; ++i) {

@@ -1,5 +1,3 @@
-package F;
-
 import java.util.Arrays;
 import java.util.Random;
 
@@ -14,7 +12,7 @@ public class F13 {
 
         System.out.println(Arrays.toString(tab));
         System.out.printf("%nNajmiejsza wartość wynosi: %d", minimumValue(tab));
-        int[] tab2 = new int[]{100};
+        int[] tab2 = {100};
         System.out.printf("%nNajmiejsza wartość wynosi: %d", minimumValue(tab2));
     }
 
