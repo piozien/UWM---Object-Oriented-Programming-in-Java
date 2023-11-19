@@ -6,8 +6,8 @@ public class School {
     private int students;
 
     public School(String name, String address, int students) {
-        this.name = name.isEmpty() ? "Wydział Matematyki i Informatyki UWM" : name;
-        this.address = address.isEmpty() ? "ul. Słoneczna 54, 10-710 Olsztyn" : address;
+        this.name = name == null || name.isEmpty() ? "Wydział Matematyki i Informatyki UWM" : name;
+        this.address = address == null || address.isEmpty() ? "ul. Słoneczna 54, 10-710 Olsztyn" : address;
         this.students = students > 0 ? students : 100;
     }
 
@@ -47,9 +47,12 @@ public class School {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        School other = (School) obj;
-        return this.address.equals(other.address);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        School school = (School) o;
+        return address.equals(school.address);
     }
 
     public void recruitment(int arg) {

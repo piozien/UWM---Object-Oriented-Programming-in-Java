@@ -18,26 +18,26 @@ class Person {
         return "Person: " + firstName +" "+  lastName + ", Age: " + age + '.';
     }
 
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if(o == null || getClass() != o.getClass()) return  false;
+        if (o == null || getClass() != o.getClass()) return false;
 
         Person person = (Person) o;
 
-        if(age != person.age) return false;
-        if(person.firstName == null) return  false;
-        if(firstName.equals(person)) return false;
-        if(person.lastName == null) return  false;
+        if (age != person.age) return false;
+        if (!firstName.equals(person.firstName)) return false;
         return lastName.equals(person.lastName);
     }
 
     @Override
     public int hashCode() {
         int result = firstName.hashCode();
-        result = 31  * result + lastName.hashCode();
+        result = 31 * result + lastName.hashCode();
         result = 31 * result + age;
-        return  result;
+        return result;
     }
 }
 // Jeżeli mam zmienną double i chce z tego liczyć hasCode
