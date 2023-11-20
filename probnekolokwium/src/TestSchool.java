@@ -5,13 +5,9 @@ public class TestSchool {
         School s1 = new School("", "", -10);
         School s2 = new School("Politechnika", "Gdańsk", 499);
         System.out.println(s1.toString());
-        System.out.println(s2.toString());
         System.out.println(s1.equals(s2));
-        System.out.println(s1.equals(s1));
-        s2.recruitment(5);
         s1.recruitment(10);
         System.out.println(s1.toString());
-        System.out.println(s2.toString());
         System.out.println("-------------------------------------------------------------------");
         University u1 = new University("", "", -10, "", -1);
         University u2 = new University("Uniwersytet", "Warszawa", 100, "agricultural", 20);

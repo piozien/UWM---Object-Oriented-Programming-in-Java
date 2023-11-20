@@ -1,5 +1,7 @@
 package education;
 
+import java.util.Objects;
+
 public class School {
     private String name;
     private String address;
@@ -43,7 +45,7 @@ public class School {
 
     @Override
     public String toString() {
-        return this.getClass().getSimpleName() + " Name: " + this.name + ". Address: " + this.address + ". Students: " + this.students;
+        return this.getClass().getSimpleName() + " Name: " + name + ". Address: " + address + ". Students: " + students;
     }
 
     @Override
@@ -52,7 +54,7 @@ public class School {
         if (o == null || getClass() != o.getClass()) return false;
 
         School school = (School) o;
-        return address.equals(school.address);
+        return Objects.equals(address, school.address);
     }
 
     public void recruitment(int arg) {

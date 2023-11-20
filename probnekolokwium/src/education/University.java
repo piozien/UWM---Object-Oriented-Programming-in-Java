@@ -8,7 +8,7 @@ public class University extends School {
     public University(String name, String address, int students, String type, int studies) {
         super(name, address, students);
         this.type = type.isEmpty() ? "university of technology" : type;
-        this.studies = studies <= 0 ? 10 : studies;
+        this.studies = studies >= 0 ? studies : 10;
     }
 
     public String getType() {
@@ -26,7 +26,7 @@ public class University extends School {
     }
 
     public void setStudies(int studies) {
-        if (studies > 0) {
+        if (studies >= 0) {
             this.studies = studies;
         }
     }
@@ -35,7 +35,7 @@ public class University extends School {
     public String toString() {
         return super.toString() +
                 " Type: " + type +
-                ". Number of fields of study: " + studies;
+                ". Number of fields of study: " + studies + ".";
     }
 
     @Override
