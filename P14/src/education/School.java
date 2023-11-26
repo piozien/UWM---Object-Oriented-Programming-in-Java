@@ -8,7 +8,7 @@ public class School {
     public School(String name, String address, int students) {
         this.name = name;
         this.address = address == null || address.isEmpty() ? "ul. Słoneczna 54, 10-710 Olsztyn" : address;
-        this.students = students < 0 ? 10 : students;
+        this.students = students <= 0 ? 10 : students;
     }
 
     public String getName() {

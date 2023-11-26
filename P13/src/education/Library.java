@@ -8,7 +8,7 @@ class Library {
     public Library(String name, String location, int books) {
         this.name = name == null || name.isEmpty() ? "Bibloteka Miejska": name;
         this.location = location == null || location.isEmpty() ? "ul. Wiedzy 123, 00-001 Miasteczko": location;
-        this.books = books < 0 ? 1000 : books;
+        this.books = books <= 0 ? 1000 : books;
     }
 
     public String getName() {

@@ -19,5 +19,6 @@ public class TestSchool {
         u1.recruitment(10);
         System.out.println(u1.toString());
         System.out.println(u2.toString());
+        s1.checkLimit(s1);
     }
 }

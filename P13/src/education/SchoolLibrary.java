@@ -40,6 +40,9 @@ class SchoolLibrary extends Library {
         if (booksadd > 3000) {
             super.setBooks(3000);
         }
+        else{
+            super.setBooks(booksadd);
+        }
     }
 
     @Override

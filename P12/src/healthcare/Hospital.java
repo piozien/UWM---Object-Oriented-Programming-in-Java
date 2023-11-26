@@ -6,9 +6,9 @@ public class Hospital {
     private int patients;
 
     public Hospital(String name, String address, int patients) {
-        this.name = name.isEmpty() || name == null ? "Centralny Szpital Kliniczny" : name;
+        this.name = name == null || name.isEmpty() ? "Centralny Szpital Kliniczny" : name;
         this.address = address.isEmpty() || address == null ? "ul. Zdrowia 100, 00-001 Warszawa" : address;
-        this.patients = patients < 0 ? 200 : patients;
+        this.patients = patients <= 0 ? 200 : patients;
     }
 
     public String getName() {
@@ -19,6 +19,9 @@ public class Hospital {
         if (!name.isEmpty() || name != null) {
             this.name = name;
         }
+        else{
+           name = "Centralny Szpital Kliniczny";
+        }
     }
 
     public String getAddress() {
@@ -26,8 +29,11 @@ public class Hospital {
     }
 
     public void setAddress(String address) {
-        if (address.isEmpty() && address != null) {
+        if (address != null && address.isEmpty()) {
             this.address = address;
+        }
+        else{
+            address = "ul. Zdrowia 100, 00-001 Warszawa";
         }
     }
 
@@ -38,6 +44,9 @@ public class Hospital {
     public void setPatients(int patients) {
         if (patients > 0) {
             this.patients = patients;
+        }
+        else{
+            patients = 200;
         }
     }
 

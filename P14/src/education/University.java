@@ -25,14 +25,14 @@ public class University extends School {
     }
 
     public void setStudies(int studies) {
-        if (studies > 0) {
+        if (studies >= 0) {
             this.studies = studies;
         }
     }
 
     @Override
     public String toString() {
-        return super.toString() + " Type: " + type + ". Number of fields of study: " + studies + ".";
+        return super.toString() + " \nType: " + type + ". Number of fields of study: " + studies + ".";
     }
 
     @Override
@@ -40,7 +40,7 @@ public class University extends School {
         super.recruitment(add);
         int st = getStudies();
         //st +=  Math.round(0.1 * add);
-        st += (int) 0.1*add;
+        st += Math.round(st / 10);
         setStudies(st);
         if (getStudents() > 500) {
             setStudies(500);
