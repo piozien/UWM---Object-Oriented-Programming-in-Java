@@ -40,7 +40,7 @@ public class University extends School {
         super.recruitment(add);
         int st = getStudies();
         //st +=  Math.round(0.1 * add);
-        st += Math.round(st / 10);
+        st += Math.round(add / 10);
         setStudies(st);
         if (getStudents() > 500) {
             setStudies(500);

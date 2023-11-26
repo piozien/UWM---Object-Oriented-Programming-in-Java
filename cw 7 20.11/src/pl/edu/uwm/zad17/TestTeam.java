@@ -7,7 +7,7 @@ public class TestTeam {
         soccerTeam1.getPoint().add(1);
         soccerTeam1.getPoint().add(0);
 
-        SoccerTeam soccerTeam2 = new SoccerTeam("TeamA", "CityA", 1);
+        SoccerTeam soccerTeam2 = (SoccerTeam) soccerTeam1.copy();
         soccerTeam2.getPoint().add(3);
         soccerTeam2.getPoint().add(1);
         soccerTeam2.getPoint().add(0);

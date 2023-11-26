@@ -13,6 +13,11 @@ class Team {
         this.city = city;
         this.point = new ArrayList<>();
     }
+    public Team copy() {
+        Team newTeam = new Team(this.name, this.city);
+        newTeam.getPoint().addAll(this.point);
+        return newTeam;
+    }
 
     public String getName() {
         return name;
