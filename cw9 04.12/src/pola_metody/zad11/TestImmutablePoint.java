@@ -1,4 +1,4 @@
-package pola_metody;
+package pola_metody.zad11;
 
 public class TestImmutablePoint {
     public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class TestImmutablePoint {
         System.out.println("HashCode: " + p1.hashCode());
     }
     /*• Sprawdź, czy taka klasa może być uznana jako niemodyfikowalna (inmutable).
-    Klasa jest niemodyfikowalna. W klasie nie ma żadnych metod pozwalających na zmianę wartości zmiennych x, y i z, dodatkowo zmienne typu final same z siebie nie mogą być modyfikowane;
+    Klasa jest modyfikowalna. Klasa ta powinna posiadać modyfikator final, przez jego brak mogę zrobić klasę pochodną i modyfikować wartości punktów.
      */
 
 

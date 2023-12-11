@@ -1,4 +1,4 @@
-package pola_metody;
+package pola_metody.zad11;
 
 public class ImmutablePoint {
     private final double x;
