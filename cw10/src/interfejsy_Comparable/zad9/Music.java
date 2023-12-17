@@ -22,6 +22,6 @@ public class Music implements Comparable<Music> {
 
     @Override
     public int compareTo(Music o) {
-        return Integer.compare(this.relaseYear, o.relaseYear);
+        return Integer.compare(o.relaseYear, this.relaseYear);
     }
 }
