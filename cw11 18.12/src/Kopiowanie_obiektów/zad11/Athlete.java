@@ -28,11 +28,15 @@ public class Athlete implements Cloneable{
                 '}';
     }
 
-    @Override
-    public Athlete clone() throws CloneNotSupportedException{
-        Athlete temp = (Athlete) super.clone();
-        temp.times = times.clone();
-        return temp;
 
+    public Athlete clone() {
+        try {
+            Athlete clonedAthlete = (Athlete) super.clone();
+            clonedAthlete.times = this.times.clone();
+            return clonedAthlete;
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
