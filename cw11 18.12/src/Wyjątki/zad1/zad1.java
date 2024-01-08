@@ -8,14 +8,7 @@ public class zad1 {
         System.out.printf("Wiek (%d) jest prawidłowy!\n", age);
     }
 
-    public static void main(String[] args) {
-        try{
-            checkAge(30);
-            checkAge(15);
-        }
-        catch(IllegalArgumentException e){
-            System.out.println("Wystąpił błąd: " + e.getMessage());
+    public zad1() {
 
-        }
     }
 }
