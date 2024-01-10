@@ -1,4 +1,4 @@
-package Programowanie_Generyczne.zad15;
+package Programowanie_Generyczne.zad14;
 
 public class Person implements Comparable<Person> {
     private String name;
@@ -15,7 +15,7 @@ public class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + "name: " + name +", age: " + age + ".";
+        return getClass().getSimpleName() + " name: " + name +", age: " + age + ".";
     }
 }
 

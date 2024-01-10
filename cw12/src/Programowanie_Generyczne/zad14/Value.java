@@ -1,17 +1,17 @@
-package Programowanie_Generyczne.zad15;
+package Programowanie_Generyczne.zad14;
 
 public class Value {
-    public static <T extends Comparable<T>> T maxValue(T[] array) {
+    public static <T extends Comparable<T>> T minValue(T[] array) {
         if (array.length == 0) {
             throw new IllegalArgumentException("Array must have at least one element");
         }
 
-        T max = array[0];
+        T min = array[0];
         for (int i = 1; i < array.length; i++) {
-            if (array[i].compareTo(max) > 0) {
-                max = array[i];
+            if (array[i].compareTo(min) < 0) {
+                min = array[i];
             }
         }
-        return max;
+        return min;
     }
 }

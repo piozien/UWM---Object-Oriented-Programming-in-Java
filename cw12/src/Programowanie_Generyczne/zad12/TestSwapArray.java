@@ -13,15 +13,17 @@ public class TestSwapArray extends SwapArray {
         System.out.println("Before swap: " + Arrays.toString(stringArray));
         swap(stringArray, 1, 3);
         System.out.println("After swap: " + Arrays.toString(stringArray));
+        Integer[] arr = {};
+        try {
+            swap(arr, 0, 0);
 
-        try{
-            swap(intArray, 0, 10);
-        }
-        catch(IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
-        finally {
-            System.out.println("Indeksy wychodzą po za rozmiar tablicy!");
+        try {
+            swap(intArray, 0, 10);
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
         }
 
     }
