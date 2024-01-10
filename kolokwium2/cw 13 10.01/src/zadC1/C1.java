@@ -1,10 +1,16 @@
 package zadC1;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class C1 {
-   /* public<E> ArrayList mergeLists(ArrayList<E>){
-        ArrayList<E> temp = new ArrayList<>();
-        return  temp;
-    }*/
+    public static <T> List<T> mergeLists(ArrayList<T> list1, ArrayList<T> list2) {
+
+        ArrayList<T> mergedList = new ArrayList<>();
+        mergedList.addAll(list1);
+        mergedList.addAll(list2);
+
+        return mergedList;
+    }
+
 }
