@@ -1,4 +1,4 @@
-package zad1;
+package healthcare;
 
 public class TestHospital {
     public static void main(String[] args) throws CloneNotSupportedException {

@@ -20,6 +20,9 @@ public class Athlete implements Cloneable{
         if(index >=0 && index<= times.length){
             times[index] = value;
         }
+        else{
+            throw new IllegalArgumentException("Index is out of the array");
+        }
     }
 
     @Override

@@ -1,4 +1,4 @@
-package zad1;
+package healthcare;
 
 public class Hospital implements Cloneable{
     private String name;
