@@ -17,6 +17,9 @@ public class Stadium {
 
     }
 
+    public Stadium(Stadium stadium) {
+    }
+
     public String getName() {
         return name;
     }

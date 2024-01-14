@@ -8,7 +8,7 @@ public class AthleteProfile {
     public AthleteProfile(String athleteName, String sport, Stadium stadium) {
         this.athleteName = athleteName == null ? "" : athleteName;
         this.sport = sport;
-        this.stadium = stadium == null ? new Stadium(): stadium;
+        this.stadium = (stadium == null) ? new Stadium() : new Stadium(stadium);
     }
 
     public String getAthleteName() {
@@ -28,11 +28,11 @@ public class AthleteProfile {
     }
 
     public Stadium getStadium() {
-        return stadium;
+        return new Stadium(stadium);
     }
 
     public void setStadium(Stadium stadium) {
-        this.stadium = stadium == null? new Stadium(): stadium;
+        this.stadium = (stadium == null) ? new Stadium() : new Stadium(stadium);
     }
 
     @Override
