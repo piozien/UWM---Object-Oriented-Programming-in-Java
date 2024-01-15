@@ -1,5 +1,7 @@
 package sports;
 
+
+
 public class Stadium {
     private String name;
     private String location;
@@ -12,7 +14,6 @@ public class Stadium {
         this.capacity = capacity;
         this.homeTeam = homeTeam  == null ? "none" : name;
     }
-
     public Stadium() {
 
     }
@@ -83,4 +84,6 @@ public class Stadium {
         result = 31 * result + homeTeam.hashCode();
         return result;
     }
+
+
 }

@@ -15,7 +15,7 @@ public class Athlete implements Cloneable{
         return times.clone();
     }
 
-    public void TimeSet(int value, int index){
+    public void timeSet(int value, int index){
         this.times = times.clone();
         if(index >=0 && index<= times.length){
             times[index] = value;
@@ -25,22 +25,34 @@ public class Athlete implements Cloneable{
         }
     }
 
-    @Override
+    /*@Override
     public Athlete clone() {
         try {
-            Athlete a1 = (Athlete) super.clone();
-            a1.times = this.times.clone();
-            return a1;
+            Athlete athlete = (Athlete) super.clone();
+            athlete.times = this.times.clone();
+            return athlete;
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
             return null;
-        }
-    }
+        }*/
+
+    //}
 
     @Override
     public String toString() {
         return getClass().getSimpleName() +
                 ", name: '" + name +
                 ", times: " + Arrays.toString(times);
+    }
+
+    @Override
+    public Athlete clone() {
+        try {
+            Athlete clone = (Athlete) super.clone();
+           clone.times = this.times.clone();
+            return clone;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
 }

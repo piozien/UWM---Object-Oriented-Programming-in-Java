@@ -11,6 +11,7 @@ public class AthleteProfile {
         this.stadium = (stadium == null) ? new Stadium() : new Stadium(stadium);
     }
 
+
     public String getAthleteName() {
         return athleteName;
     }

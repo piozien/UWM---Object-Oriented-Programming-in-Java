@@ -10,6 +10,6 @@ public class ArtistTitleComparator implements Comparator<Song> {
         if (artistComparison != 0) {
             return o2.getArtist().compareTo(o1.getArtist());
         }
-        return o2.getTitle().compareTo(o1.getTitle()); // Odwrotny porządek dla tytułu
+        return o2.getTitle().compareTo(o1.getTitle());
     }
 }

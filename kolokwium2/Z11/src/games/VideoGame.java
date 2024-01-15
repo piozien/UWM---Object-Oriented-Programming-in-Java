@@ -1,6 +1,6 @@
 package games;
 
-public class VideoGame implements  Comparable<VideoGame> {
+public class VideoGame implements Comparable<VideoGame> {
     private String name;
     private String developer;
     private float rating;
@@ -28,4 +28,5 @@ public class VideoGame implements  Comparable<VideoGame> {
 
         return Integer.compare(other.getName().length(), this.getName().length());
     }
+    //obiekty klasy VideoGame były porównywane według kryterium: malejąco według długości pola name
 }

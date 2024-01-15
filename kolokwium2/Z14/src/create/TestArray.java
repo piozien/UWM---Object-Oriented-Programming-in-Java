@@ -19,6 +19,5 @@ public class TestArray {
         for(var x: tab){
             System.out.println(x);
         }
-
     }
 }

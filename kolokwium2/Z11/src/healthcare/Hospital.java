@@ -6,7 +6,7 @@ public class Hospital implements Cloneable{
 
     public Hospital(String name, double capacity) {
         this.name = name == null ? "" : name;
-        this.capacity = capacity < 0 ? 50: capacity;
+        this.capacity = capacity < 0 ? 50.0: capacity;
     }
 
     @Override

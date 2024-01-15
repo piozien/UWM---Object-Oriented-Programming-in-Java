@@ -9,8 +9,13 @@ public class FindMedian {
         }
 
         Arrays.sort(array);
+        int middleIndex = 0;
+    if(array.length % 2 == 0){
+       middleIndex = array.length + 1 / 2;
+    }else{
+        middleIndex = array.length / 2;
+    }
 
-        int middleIndex = array.length / 2;
         return array[middleIndex];
     }
 }

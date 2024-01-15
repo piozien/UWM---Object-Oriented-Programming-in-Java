@@ -21,8 +21,8 @@ public class TestUtil {
         }
 
     public static <E> void appendFromEnd(ArrayList<? super E> arr1, ArrayList<E> arr2) {
-        for (E element : arr2) {
-            arr1.add(element);
+        for (Object element : arr1) {
+            arr2.add((E) element);
         }
     }
 }
